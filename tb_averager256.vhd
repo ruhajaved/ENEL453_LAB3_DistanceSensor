@@ -45,26 +45,22 @@ begin
 	begin
 
 		reset_n <= '0'; wait for 5 * TbPeriod;
-		reset_n <= '1'; --wait for 100 * TbPeriod;
+		reset_n <= '1';
 		EN <= '1'; -- note that EN will not always be 1 but for the sake of the simulation and unit testing, it is here
-		
 		
 		for i in 1 to 2**4 loop -- after this loop, Q should be 2 (since all 16 samples are 2)
 			wait until rising_edge(clk);
 				Din <= x"002"; wait for TbPeriod;
-				report "here";
 		end loop;
 		
 		for i in 1 to (2**4)/2 loop -- after this loop, Q should be (2*8 + 4*8) / 16
 			wait until rising_edge(clk);
 				Din <= x"004"; wait for TbPeriod;
-				report "here";
 		end loop;
 		
 		for i in 1 to (2**4)/2 loop -- after this loop, Q should be (6*8 + 4*8) / 16
 			wait until rising_edge(clk);
 				Din <= x"006"; wait for TbPeriod;
-				report "here";
 		end loop;
 		
 		TbSimEnded <= '1';

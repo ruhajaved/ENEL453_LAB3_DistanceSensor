@@ -68,7 +68,7 @@ begin
 	
 	-- test reset behaviour
 	reset_n <= '0'; wait for 1000000 * TbPeriod;
-	reset_n <= '1'; wait for 70 ms; --1010000 * TbPeriod;
+	reset_n <= '1'; wait for 70 ms;
 	
 	-- test when S = 11, should see hex value of moving average at output in volts
 	SW(9 downto 8) <= "11"; wait for 1000000 * TbPeriod;		
