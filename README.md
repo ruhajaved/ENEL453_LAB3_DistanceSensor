@@ -54,3 +54,9 @@ Then, to program the hardware, ensure that the distance sensor is connected to t
 5. Finally, click on "Start" and wait till the progress bar shows 100%. At this point the board has been programmed and you can test the design.
 
 If looking to simulate the design, create a project in ModelSim. You can then use any of the different testbenches provided to test different parts of the design.
+
+## Possible Improvements
+
+Possible improvements for this project include:
+
+N/A
