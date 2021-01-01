@@ -55,6 +55,8 @@ Then, to program the hardware, ensure that the distance sensor is connected to t
 
 If looking to simulate the design, create a project in ModelSim. You can then use any of the different testbenches provided to test different parts of the design.
 
+Also note that depending on if looking to test the design on the board vs simulate on ModelSim, you must comment out one of the lines from line 34-35 in "ADC_Data.vhd".
+
 ## Possible Improvements
 
 Possible improvements for this project include:
