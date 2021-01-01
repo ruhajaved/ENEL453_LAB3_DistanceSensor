@@ -40,7 +40,7 @@ To launch the project on to the board, you will first have to create a project i
 2. Click "Next" on the intro page.
 3. Choose a directory for the project, as well as a name for the project. Set the top level name to "top_level.vhd" and click "Next".
 4. Select "Empty Project" and click "Next".
-5. Add all the project files (everything with extensions vhd., qsf., and .sdc). Click "Next".
+5. Add all the project files (everything with extensions vhd., qsf., and .sdc). Also, add "adc_qsys.qip". Click "Next".
 6. Go into the "Board" tab and select "MAX 10 DE10-Lite". Also, make sure to unselect "Create top-level design file" that is located near the bottom of the window. Click "Next".
 7. Include no EDA tools. Click "Next".
 8. Click "Finish".
